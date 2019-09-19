@@ -1,0 +1,22 @@
+<a [routerLink] = "['/products']">Home</a>
+
+<h4>Add a new product:</h4>
+
+<form>
+
+    <label>Name:
+        <input type="text" name="newProduct.name" [(ngModel)]="newProduct.name">
+    </label>
+
+    <label>Price:
+        <input type="text" name="newProduct.price" [(ngModel)]="newProduct.price">
+    </label>
+
+    <label>Image URL:
+        <input type="text" name="newProduct.image" [(ngModel)]="newProduct.image">
+    </label>
+
+    <input type="submit" value="Submit" (click)="onSubmit()">
+
+</form>
+<button [routerLink]="['/products']">Cancel</button>
